@@ -12,8 +12,8 @@ class HomeController {
 
     @RequestMapping("/")
     String index(Model model) {
-       // model.addAttribute("now", LocalDateTime.now());
-        return "index";
+        model.addAttribute("now", LocalDateTime.now());
+        return "index0";
     }
 
     @RequestMapping("properties")
